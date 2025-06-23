@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-user-profile',
   imports: [],
   templateUrl: './user-profile.component.html',
-  styleUrl: './user-profile.component.css',
 })
 export class UserProfileComponent {
   myTitle = 'User Profile';
