@@ -1,0 +1,20 @@
+<div class="flex flex-col md:flex-row">
+  <!-- Profile Picture Section (Left) -->
+  <div class="md:w-1/4 p-6 bg-gray-50 flex flex-col items-center">
+    <img
+      src="{{ profileImage }}"
+      alt="Profile Picture"
+      class="h-32 w-32 rounded-full object-cover border-4 border-white shadow-md mb-4"
+    />
+    <h3 class="text-lg font-medium text-gray-800">Jane Doe</h3>
+    <p class="text-sm text-gray-500">Founder</p>
+  </div>
+
+  <!-- Content Section (Right) -->
+  <div class="md:w-3/4 p-6">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+      Welcome to {{ myTitle }}
+    </h2>
+    <p class="text-gray-600">{{ description }}</p>
+  </div>
+</div>

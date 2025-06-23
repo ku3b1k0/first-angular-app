@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, UserProfileComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'MyApp';
-  description = 'Why does Bubu love Ladoo?';
-  profileImage = '/assets/images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg';
 
   getTitle(): string {
     return this.title;
