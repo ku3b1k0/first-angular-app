@@ -40,12 +40,16 @@
                 clip-rule="evenodd"
               />
             </svg>
-            @if (currentUser.userMembership === "gold") {
-              <span class="text-yellow-200">GOLD MEMBER</span>
-            } @else if (currentUser.userMembership === "silver") {
-              <span class="text-yellow-200">SILVER MEMBER</span>
-            } @else {
-              <span class="text-yellow-200">COPPER MEMBER</span>
+            @switch (currentUser.userMembership) {
+              @case ("gold") {
+                <span class="text-yellow-200">GOLD MEMBER</span>
+              }
+              @case ("silver") {
+                <span class="text-yellow-200">SILVER MEMBER</span>
+              }
+              @default {
+                <span class="text-yellow-200">COPPER MEMBER</span>
+              }
             }
           </span>
           <div class="bg-white bg-opacity-20 p-1.5 rounded-md">
