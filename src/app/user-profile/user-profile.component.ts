@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { UserDetails } from './user-details';
+import { ProductListingComponent } from '../product-listing/product-listing.component';
 
 @Component({
   selector: 'app-user-profile',
-  imports: [],
+  imports: [ProductListingComponent],
   templateUrl: './user-profile.component.html',
 })
 export class UserProfileComponent {
