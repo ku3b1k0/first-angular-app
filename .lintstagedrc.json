@@ -1,4 +1,0 @@
-{
-    "**/*.{ts,html}": "npx eslint --cache --fix", 
-    "**/*.css": "npx stylelint --cache --fix"
-}
