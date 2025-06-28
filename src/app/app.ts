@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-root',
   imports: [],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
   protected title = 'first-angular-app';
