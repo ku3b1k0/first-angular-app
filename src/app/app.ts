@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; //import { CommonModule } from '@angular/common';
 import { UserProfile } from './user-profile.model';
 @Component({
   selector: 'app-root',
@@ -16,7 +16,7 @@ export class App {
     description:
       'Full-stack developer specializing in Angular and Node.js. Passionate about creating clean, efficient code and mentoring junior developers',
     profileImage: '/images/profile1.jpg',
-    membershipLevel: 'GOLD',
+    membershipLevel: 'PLATINUM',
     skills: ['Angular', 'TypeScript', 'JavaScript', 'Node.js'],
   };
 }
