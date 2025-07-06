@@ -1,6 +1,6 @@
-import { Environment } from "./environment.model";
+import { Environment } from './environment.model';
 
 export const environment: Environment = {
- name:'staging environment',
- code: 1003,
+  name: 'staging environment',
+  code: 1003,
 };
