@@ -7,7 +7,7 @@ import { environment } from '../environments/environment';
   styleUrl: './app.css',
 })
 export class App implements OnInit {
-  protected title = 'first-angular-app';
+  protected title = 'Hello world!';
   protected environmentName = environment.name;
   protected environmentCode = environment.code;
   ngOnInit(): void {

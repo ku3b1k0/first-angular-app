@@ -1,5 +1,8 @@
-@import url("@fontsource/montserrat"); /* Defaults to 400 weight */
+@import url("tailwindcss");
+
+/* styles.scss */
+@import url("@fontsource-variable/montserrat");
 
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat Variable", sans-serif;
 }
