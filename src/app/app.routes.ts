@@ -3,6 +3,7 @@ import { HomeComponent } from './features/home/home.component';
 import { AboutComponent } from './features/about/about.component';
 import { ContactComponent } from './features/contact/contact.component';
 import { NotFoundComponent } from './features/not-found/not-found.component';
+import { ServicesComponent } from './features/services/services.component';
 
 export const routes: Routes = [
   {
@@ -12,6 +13,10 @@ export const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent,
+  },
+  {
+    path: 'services',
+    component: ServicesComponent,
   },
   {
     path: 'contact',
