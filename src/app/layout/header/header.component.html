@@ -14,26 +14,35 @@
       <!-- Navigation Menu -->
       <nav class="hidden md:flex space-x-8">
         <a
-          href="#"
-          class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+          routerLink="/"
+          routerLinkActive="text-blue-900 decoration-blue-900 font-semibold"
+          ariaCurrentWhenActive="page"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="text-blue-500 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors underline decoration-2 underline-offset-4 hover:decoration-blue-700"
         >
           Home
         </a>
         <a
-          href="#"
-          class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+          routerLink="/about"
+          routerLinkActive="text-blue-900 decoration-blue-900 font-semibold"
+          ariaCurrentWhenActive="page"
+          class="text-blue-500 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors underline decoration-2 underline-offset-4 hover:decoration-blue-700"
         >
           About
         </a>
         <a
-          href="#"
-          class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+          routerLink="/services"
+          routerLinkActive="text-blue-900 decoration-blue-900 font-semibold"
+          ariaCurrentWhenActive="page"
+          class="text-blue-500 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors underline decoration-2 underline-offset-4 hover:decoration-blue-700"
         >
           Services
         </a>
         <a
-          href="#"
-          class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+          routerLink="/contact"
+          routerLinkActive="text-blue-900 decoration-blue-900 font-semibold"
+          ariaCurrentWhenActive="page"
+          class="text-blue-500 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors underline decoration-2 underline-offset-4 hover:decoration-blue-700"
         >
           Contact
         </a>

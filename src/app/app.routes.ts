@@ -9,21 +9,26 @@ export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+    title: 'Home',
   },
   {
     path: 'about',
     component: AboutComponent,
+    title: 'About Us',
   },
   {
     path: 'services',
     component: ServicesComponent,
+    title: 'Our Services',
   },
   {
     path: 'contact',
     component: ContactComponent,
+    title: 'Contact Us',
   },
   {
     path: '**',
     component: NotFoundComponent,
+    title: 'Page Not Found',
   },
 ];
