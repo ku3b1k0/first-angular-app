@@ -118,6 +118,9 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
+            "watch": false,
+            "progress": false,
+            "codeCoverage": true,
             "polyfills": [
               "zone.js",
               "zone.js/testing"
