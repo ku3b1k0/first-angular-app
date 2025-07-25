@@ -42,7 +42,9 @@ module.exports = tseslint.config(
       eslintPluginPrettierRecommended
     ],
     rules: {
-      "@angular-eslint/template/prefer-self-closing-tags": ["error"]
+      "@angular-eslint/template/prefer-self-closing-tags": [
+      "error"
+    ]
     },
   }
 );
