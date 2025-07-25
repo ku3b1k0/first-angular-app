@@ -50,9 +50,16 @@
 
       <!-- Mobile menu button -->
       <div class="md:hidden">
-        <button class="text-gray-700 hover:text-blue-600 p-2">
+        <button
+          (click)="toggleMobileMenu()"
+          class="text-gray-700 hover:text-blue-600 p-2 relative z-50"
+          [attr.aria-expanded]="isMobileMenuOpen"
+          aria-label="Toggle mobile menu"
+        >
+          <!-- Hamburger Icon -->
           <svg
-            class="h-6 w-6"
+            *ngIf="!isMobileMenuOpen"
+            class="h-6 w-6 transition-opacity duration-200"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -64,8 +71,69 @@
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
+
+          <!-- Close Icon -->
+          <svg
+            *ngIf="isMobileMenuOpen"
+            class="h-6 w-6 transition-opacity duration-200"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
         </button>
       </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div
+      class="md:hidden transition-all duration-300 ease-in-out overflow-hidden"
+      [class.max-h-0]="!isMobileMenuOpen"
+      [class.max-h-96]="isMobileMenuOpen"
+      [class.opacity-0]="!isMobileMenuOpen"
+      [class.opacity-100]="isMobileMenuOpen"
+    >
+      <nav class="px-2 pt-2 pb-4 space-y-1 bg-gray-50 border-t border-gray-200">
+        <a
+          routerLink="/"
+          routerLinkActive="bg-blue-100 text-blue-900 border-blue-500"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="closeMobileMenu()"
+          class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors border-l-4 border-transparent"
+        >
+          Home
+        </a>
+        <a
+          routerLink="/about"
+          routerLinkActive="bg-blue-100 text-blue-900 border-blue-500"
+          (click)="closeMobileMenu()"
+          class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors border-l-4 border-transparent"
+        >
+          About
+        </a>
+        <a
+          routerLink="/services"
+          routerLinkActive="bg-blue-100 text-blue-900 border-blue-500"
+          (click)="closeMobileMenu()"
+          class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors border-l-4 border-transparent"
+        >
+          Services
+        </a>
+        <a
+          routerLink="/contact"
+          routerLinkActive="bg-blue-100 text-blue-900 border-blue-500"
+          (click)="closeMobileMenu()"
+          class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors border-l-4 border-transparent"
+        >
+          Contact
+        </a>
+      </nav>
     </div>
   </div>
 </header>
